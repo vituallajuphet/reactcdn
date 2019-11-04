@@ -3,16 +3,25 @@ const {BrowserRouter, Route, Link, Switch, withRouter, Redirect } = ReactRouterD
 
 // header components
 const MyHeader = (props) => {    
+
+    const contactInfo = {
+        phone : "0905-553-2322",
+        email: "vitualla1114@gmail.com"
+    }
+
     return (
         <div className="headerArea">
             <header>
                 <div className="headCont">
                     <div className="wrapper">
                         <div className="mainLogo">
-                            <figure><img src="./img/logo.png"/></figure>
+                            <Link to="/home"><figure><img src="./img/logo.png"/></figure></Link>
                         </div>
                         <div className="contactInfo">
-                            <h3>Contact Information: <span>0905-553-2322</span></h3>
+                            <h3>Contact Information: 
+                                <span>Phone: {contactInfo.phone}</span>
+                                <span>Email: <a href={"mailto:"+contactInfo.email}>{contactInfo.email}</a></span>
+                                </h3>
                         </div>
                         <div className="clearfix"> </div>
                     </div>
@@ -55,13 +64,30 @@ class BannerArea extends Component{
         super(props)
     }
     render(){
-        return(
-            <div id="BannerArea">
-                <div className="bnr_cont">
-                    Banner
+
+        const currPage = this.props.location.pathname;
+
+        console.log(currPage)
+
+        if(currPage  == "/" || currPage  == "/home"){
+            return(
+                <div id="BannerArea">
+                    <div className="bnr_cont">
+                         <figure><img src="http://localhost/musichire/img/bnr.jpg"/></figure>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }else{
+            return(
+                <div id="BannerArea">
+                    <div className="bnr_cont">
+                       non
+                    </div>
+                </div>
+            );
+        }
+
+        
     }
 }
 const RBannerArea = withRouter(BannerArea)

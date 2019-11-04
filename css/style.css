@@ -1,6 +1,6 @@
 @font-face {
     font-family: questral;
-    src: url(./font/questrial.woff);
+    src: url(../font/questrial.woff);
 }
 
 *, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
@@ -41,8 +41,14 @@ a[href^="tel:"]{color: inherit!important; text-decoration: none;}
 
 header{}
 .mainLogo{float: left;}
-.contactInfo{float: right}
+.contactInfo{float: right;color: #fff;}
 .headCont { background: #556b55; padding: 10px 0; }
+
+.contactInfo h3{font-size: 19px; margin: 13px 0px 0px;}
+.contactInfo h3 span{display: block;}
+
+.contactInfo a{color: #fff;font-size: 19px; }
+.contactInfo a:hover{text-decoration: underline;}
 
 .wrapper{margin: 0 auto;max-width: 1080px;width: 100%;height: auto;}
 
@@ -50,17 +56,20 @@ header{}
 .bnr_cont{min-height: 350px; background: #222;}
 
 /* nav */
-#nav_area{background: gray}
+#nav_area{background: #e4e4e4}
 #nav_area nav{}
 #nav_area nav ul{font-size: 0;text-align: center;}
-#nav_area nav ul li{display: inline-block;vertical-align: top;margin: 0 10px}
-#nav_area nav ul li a{font-size: 17px;display: block;font-weight: normal;color: #fff;line-height: 50px}
+#nav_area nav ul li { display: inline-block; vertical-align: top; margin: 0 36px; }
+#nav_area nav ul li a{font-size: 17px;display: block;font-weight: normal;color: #333;line-height: 50px}
+
+#nav_area nav ul li:first-child{margin-left: 0;}
+#nav_area nav ul li:last-child{margin-right: 0;}
 
 /* header */
 
 .mainLogo { float: left; max-width: 253px; }
 /* main */
-.h1_title{font-size: 20px; font-weight: bold; color: #676b67;margin: 0 0 16px}
+.h1_title{font-size: 25px;  color: #676b67;margin: 0 0 16px}
 .main_cont{min-height: 300px;padding: 30px 0;}
 
 

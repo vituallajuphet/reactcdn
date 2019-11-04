@@ -9,10 +9,11 @@ class Home extends Component{
     render(){
         const {title} = this.state
         return(
-            <div>
+            <div className="home_page">
                 <h1 className="h1_title">{title}</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repellat dolorum voluptates ad soluta dolores corporis voluptas quod eveniet obcaecati nesciunt! Veniam ipsam similique itaque numquam reiciendis quae sit quia.</p>
-             </div>
+            </div>
+            
         );
     }
 }
