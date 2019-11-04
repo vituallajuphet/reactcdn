@@ -10,7 +10,7 @@ class App extends Component {
 
         return (
              <div className="app">
-                <BrowserRouter>
+                <BrowserRouter history={History}>
                     <MyHeader />
                     <MyNav />
                     <RBannerArea />
@@ -20,7 +20,12 @@ class App extends Component {
                            <div className="wrapper">
                            <main>
                                 <Switch>         
-                                    <Route exact path="/" component={Home} /> 
+                               
+                                    <Route exact path="/">
+                                     <Redirect to="/home" /> 
+                                    </Route>
+
+                                    <Route path="/home" component={Home} /> 
                                     <Route path="/services" component={Services} /> 
                                     <Route path="/about-us" component={AboutUs} /> 
                                     <Route path="/careers" component={Careers} /> 

@@ -42,6 +42,7 @@ a[href^="tel:"]{color: inherit!important; text-decoration: none;}
 header{}
 .mainLogo{float: left;}
 .contactInfo{float: right}
+.headCont { background: #556b55; padding: 10px 0; }
 
 .wrapper{margin: 0 auto;max-width: 1080px;width: 100%;height: auto;}
 
@@ -56,9 +57,8 @@ header{}
 #nav_area nav ul li a{font-size: 17px;display: block;font-weight: normal;color: #fff;line-height: 50px}
 
 /* header */
-.headCont{background: green}
 
-
+.mainLogo { float: left; max-width: 253px; }
 /* main */
 .h1_title{font-size: 20px; font-weight: bold; color: #676b67;margin: 0 0 16px}
 .main_cont{min-height: 300px;padding: 30px 0;}

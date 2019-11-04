@@ -1,5 +1,5 @@
 const {Component} = React;
-const {BrowserRouter, Route, Link, Switch, withRouter } = ReactRouterDOM
+const {BrowserRouter, Route, Link, Switch, withRouter, Redirect } = ReactRouterDOM
 
 // header components
 const MyHeader = (props) => {    
@@ -9,8 +9,7 @@ const MyHeader = (props) => {
                 <div className="headCont">
                     <div className="wrapper">
                         <div className="mainLogo">
-                            <figure><img src=""/></figure>
-                            logo
+                            <figure><img src="./img/logo.png"/></figure>
                         </div>
                         <div className="contactInfo">
                             <h3>Contact Information: <span>0905-553-2322</span></h3>
